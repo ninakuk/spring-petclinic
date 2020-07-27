@@ -4,10 +4,10 @@ pipeline
 
     stages
     {
-        stage('Clone from git')
+        /*stage('Clone from git')
         {
             git 'https://github.com/ninakuk/spring-petclinic.git'
-        }
+        }*/
 
         stage('Build Image')
         {
