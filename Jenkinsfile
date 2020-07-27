@@ -12,7 +12,7 @@ pipeline
         stage('Build Image')
         {
             steps
-            {   //bat 'mvn clean package'
+            {   
                 bat "docker build . -t petclinicwebapp:${env.BUILD_ID}"
             }
         }
@@ -21,7 +21,7 @@ pipeline
         {
             steps
             {
-            bat "docker run -p 8282:8080 petclinicwebapp:${env.BUILD_ID}"
+            bat "docker run -p 8383:8080 petclinicwebapp:${env.BUILD_ID}"
             }
         }
 
