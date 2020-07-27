@@ -19,7 +19,10 @@ pipeline
 
         stage('Run Container')
         {
+            steps
+            {
             bat "docker run -p 8282:8080 petclinicwebapp:${env.BUILD_ID}"
+            }
         }
 
     }
