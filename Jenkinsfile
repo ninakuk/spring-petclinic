@@ -5,7 +5,7 @@ pipeline
         node
         {
             label 'novi-path'
-            customWorkspace 'C:\Users\Nina Kukuljan\Desktop\spring-petclinic'
+            customWorkspace 'C:/Users/Nina Kukuljan/Desktop/spring-petclinic'
         }
     }
 
