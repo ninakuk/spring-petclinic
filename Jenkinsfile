@@ -17,6 +17,7 @@ pipeline
         {
             steps
             {   
+                bat "mvn clean package"
                 bat "docker build . -t petclinicwebapp:${env.BUILD_ID}"
             }
         }
