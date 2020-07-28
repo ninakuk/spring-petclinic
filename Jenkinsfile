@@ -18,9 +18,10 @@ pipeline
         {
             steps
             {
-                bat "docker run -p 8383:8080 petclinicwebapp:${env.BUILD_ID}"
+                bat "docker run -d -p 8383:8080 petclinicwebapp:${env.BUILD_ID}"
             }
         }
+        
 
     }
 }
