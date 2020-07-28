@@ -8,8 +8,8 @@ pipeline
         {
             steps
             { 
-                bat "cd ~/Desktop/spring-petclinic"  
-                /*bat "copy ./target/*.jar  ."*/
+                /*bat "cd ~/Desktop/spring-petclinic"*/  
+                bat "copy ./target/*.jar  ."
                 bat "docker build . -t petclinicwebapp:${env.BUILD_ID}"
             }
         }
