@@ -8,7 +8,7 @@ pipeline
         {
             steps
             { 
-                bat "mvn clean package" 
+                bat "mvn -B -DskipTests clean package" 
                 bat "copy .\\target\\*.jar  ."
                 bat "docker build . -t petclinicwebapp:${env.BUILD_ID}"
             }
